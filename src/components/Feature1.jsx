@@ -1,5 +1,5 @@
-import StarPu from "../assets/images/star-pu.png";
-import Idea from "../assets/images/idea.png";
+import StarPu from "../assets/star-pu.png";
+import Idea from "../assets/idea.png";
 
 const Feature1 = () => {
   return (

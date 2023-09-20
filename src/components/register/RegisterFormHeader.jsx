@@ -1,7 +1,7 @@
 import React from "react";
 
-import Boy from "../../assets/images/boy.png";
-import Girl from "../../assets/images/girl.png";
+import Boy from "../../assets/boy.png";
+import Girl from "../../assets/girl.png";
 
 const RegisterFormHeader = () => {
   return (
