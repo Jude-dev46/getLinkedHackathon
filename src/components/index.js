@@ -10,7 +10,7 @@ import Navbar from "./Navbar";
 
 
 export {
-    Navbar,
+    Navbar
     // Hero,
     // CompaniesSlider,
     // Hero2,
