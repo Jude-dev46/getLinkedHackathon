@@ -28,27 +28,26 @@ const Hero = () => {
                 />
               </h1>
 
-          <p className="mt-8 text-base text-black sm:text-xl">
-          Participate in getlinked tech Hackathon 2023 stand 
-a chance to win a Big prize
-          </p>
+              <p className="mt-8 text-base text-black sm:text-xl">
+                Participate in getlinked tech Hackathon 2023 stand a chance to
+                win a Big prize
+              </p>
 
-          <div className="my-8 inline-flex items-center justify-center px-12 py-2.5 text-base font-semibold button-gradient-bg rounded-md   hover:text-white transition-all duration-200 focu focus:text-white"
-            role="button">
-           Register
+              <div
+                className="my-8 inline-flex items-center justify-center px-12 py-2.5 text-base font-semibold button-gradient-bg rounded-md   hover:text-white transition-all duration-200 focu focus:text-white"
+                role="button"
+              >
+                Register
+              </div>
+            </div>
+
+            <div>
+              <img className="w-full" src={heroImage} alt="" />
+            </div>
           </div>
         </div>
-
-        <div>
-          <img
-            className="w-full"
-            src={heroImage}
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
-  </section>
+        <div className="border-b-[.05px] text-white"></div>
+      </section>
     </div>
   );
 };
