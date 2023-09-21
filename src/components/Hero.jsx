@@ -15,9 +15,9 @@ const Hero = () => {
       <section className="py-8 sm:py-10  text-white text-center sm:text-start ">
         
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className='flex flex-col text-[1.1rem] sm:text-3xl text-end pb-6 items-center sm:items-end font-semibold pt-4 '>
+          <div className='flex flex-col text-[1.2rem] sm:text-3xl items-center sm:text-end pb-6 sm:items-end font-semibold pt-4 '>
             <p>Igniting a Revolution in HR Innovation</p>
-            <img src={curve} alt="" className=' pt-2 w-[10rem] sm:w-auto' />
+            <img src={curve} alt="" className=' pt-2 w-[10rem] sm:w-auto self-end' />
           </div>
 
           <img src={purpleLeft} alt="purple lens flare" className="w-[616px] h-[563px] lg:hidden absolute pointer-events-none top-[-8%] left-[-8%] mix-blend-hard-light" />
