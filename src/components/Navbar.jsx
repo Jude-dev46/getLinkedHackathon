@@ -6,63 +6,63 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { useState } from "react";
 
 const Navbar = () => {
-const [toggle, setToggle] = useState(false);
-const handleClick = () => {
-setToggle(true);
-};
-const handleClick1 = () => {
-setToggle(false);
-};
+  const [toggle, setToggle] = useState(false);
+
+  const handleClick = () => {
+    setToggle(true);
+  };
+  const handleClick1 = () => {
+    setToggle(false);
+  };
 
   return (
     <>
-      <div className="px-4 mx-auto sm:px-6 lg:px-20 bg-[#150E28] text-white w-full pt-4 pb-4">
+      <div className="px-4 mx-auto sm:px-6 lg:px-20 bg-[#150E28] text-white w-full">
         {/* Desktop mode */}
-        <div className="flex items-center justify-between h-16 lg:h-20 ">
+        <div className="flex items-center justify-between h-16">
           <div className="">
             <Link to="/" title="" className="flex">
               <img className="w-auto h-6 sm:h-8" src={logo} alt="" />
             </Link>
           </div>
+          <ul className="hidden ml-auto lg:flex lg:items-center lg:justify-center lg:space-x-10">
+            <li
+              href="#"
+              title=""
+              className="text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
+            >
+              {" "}
+              Timeline
+            </li>
 
-  <ul className="hidden ml-auto lg:flex lg:items-center lg:justify-center lg:space-x-10">
-  <li
-  href="#"
-  title=""
-  className="text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
-  >
-  {" "}
-  Timeline
-  </li>
+            <li
+              href="#"
+              title=""
+              className="text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
+            >
+              {" "}
+              Overview{" "}
+            </li>
 
-  <li
-  href="#"
-  title=""
-  className="text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
-  >
-  {" "}
-  Overview{" "}
-  </li>
+            <li
+              href="#"
+              title=""
+              className="text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
+            >
+              {" "}
+              FAQs{" "}
+            </li>
 
-  <li
-  href="#"
-  title=""
-  className="text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
-  >
-  {" "}
-  FAQs{" "}
-  </li>
+            <li
+              href="#"
+              title=""
+              className="text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
+            >
+              {" "}
+              Contact
+            </li>
 
-  <li
-  href="#"
-  title=""
-  className="text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
-  >
-  {" "}
-  Contact
-  </li>
-
-  <div className="w-px h-/20"></div>
+            <div className="w-px h-/20"></div>
 
             <li
               title=""
@@ -73,61 +73,61 @@ setToggle(false);
             </li>
           </ul>
 
-  <div className="lg:hidden text-white">
-  {toggle ? (
-  <RiCloseLine size={40} onClick={handleClick1} />
-  ) : (
-  <RiMenu3Line
-  className="cursor-pointer"
-  onClick={handleClick}
-  size={30}
-  />
-  )}
-  </div>
-  </div>
+          <div className="lg:hidden text-white">
+            {toggle ? (
+              <RiCloseLine size={40} onClick={handleClick1} />
+            ) : (
+              <RiMenu3Line
+                className="cursor-pointer"
+                onClick={handleClick}
+                size={30}
+              />
+            )}
+          </div>
+        </div>
 
-  {/* Mobile mode */}
-  <div
-  className={`absolute z-10 p-4 bg-[#150E28] w-full left-0 px-8  lg:hidden transform transition-all duration-500 ease-in-out ${
-  toggle ? "translate-x-0" : "-translate-x-full"
-  }`}
-  >
-  <ul>
-  <li
-  href="#"
-  title=""
-  className="p-4 text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
-  >
-  {" "}
-  Timeline
-  </li>
+        {/* Mobile mode */}
+        <div
+          className={`absolute z-10 p-4 bg-[#150E28] w-full left-0 px-8  lg:hidden transform transition-all duration-500 ease-in-out ${
+            toggle ? "translate-x-0" : "-translate-x-full"
+          }`}
+        >
+          <ul>
+            <li
+              href="#"
+              title=""
+              className="p-4 text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
+            >
+              {" "}
+              Timeline
+            </li>
 
-  <li
-  href="#"
-  title=""
-  className="p-4 text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
-  >
-  {" "}
-  Overview{" "}
-  </li>
+            <li
+              href="#"
+              title=""
+              className="p-4 text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
+            >
+              {" "}
+              Overview{" "}
+            </li>
 
-  <li
-  href="#"
-  title=""
-  className="p-4 text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
-  >
-  {" "}
-  FAQs{" "}
-  </li>
+            <li
+              href="#"
+              title=""
+              className="p-4 text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
+            >
+              {" "}
+              FAQs{" "}
+            </li>
 
-  <li
-  href="#"
-  title=""
-  className="p-4 text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
-  >
-  {" "}
-  Contact
-  </li>
+            <li
+              href="#"
+              title=""
+              className="p-4 text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
+            >
+              {" "}
+              Contact
+            </li>
 
             <li
               href="#"
@@ -140,7 +140,7 @@ setToggle(false);
           </ul>
         </div>
       </div>
-      <div className="border-b-[.05px] text-white"></div>
+      {/* <div className="border-b-[.05px] text-white"></div> */}
     </>
   );
 };

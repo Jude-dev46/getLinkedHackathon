@@ -77,7 +77,7 @@ const RegisterForm = ({ onRegister, category }) => {
               style={{ color: "white" }}
             >
               <option>Select your category</option>
-              {category.map((cat) => (
+              {category?.map((cat) => (
                 <option key={cat.id}>{cat.name}</option>
               ))}
             </select>

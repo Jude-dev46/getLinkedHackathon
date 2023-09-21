@@ -67,7 +67,7 @@ const Register = () => {
   }
 
   return (
-    <div className="bg-blue-900 w-full h-full lg:max-h-screen overflow-hidden">
+    <div className="bg-blue-900 w-full h-full lg:h-[100dvh] overflow-hidden">
       {isOpen && <Modal closeModal={closeModalHandler} />}
       <Navbar />
       <div className="relative flex flex-col lg:flex-row lg:items-center mb-5 overflow-hidden">
