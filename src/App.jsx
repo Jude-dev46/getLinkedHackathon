@@ -1,15 +1,16 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Register from "./Register";
-import { Navbar } from "./components";
-import Feature1 from "./components/Feature1";
+import Home from "./Home";
 
 const App = () => {
   return (
-    <>
-      <Navbar />
-      {/* <Register /> */}
-      <Feature1 />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 export default App;

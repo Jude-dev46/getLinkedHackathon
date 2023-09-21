@@ -3,17 +3,17 @@ import Idea from "../assets/images/idea.png";
 
 const Feature1 = () => {
   return (
-    <div className="bg-blue-900 w-full flex justify-center">
-      <div className="flex">
-        <div>
+    <div className="bg-blue-900">
+      <div className="flex items-center mx-auto">
+        <div className="relative">
           <img src={Idea} alt="the big idea" />
         </div>
-        <div className="relative">
-          <h2 className="w-full text-white font-bold text-4xl mb-5 font-sans">
+        <div className="flex flex-col self-center justify-center">
+          <h2 className="text-white font-bold text-4xl mb-5 font-sans">
             Introduction to getlinked
             <br /> <span className="text-pink mt-4">techHackathon 1.0</span>
           </h2>
-          <p className="w-2/5 h-44 text-white font-sans">
+          <p className="h-44 text-white font-sans">
             Our tech hackathon is a melting pot of visionaries, and its purpose
             is as clear as day: to shape the future. Whether you're a coding
             genius, a design maverick or a concept wizard, you'll have the
@@ -21,11 +21,11 @@ const Feature1 = () => {
             problems, pushing the boundaries of technology, and creating
             solutions that can change the world, that's what we're all about!
           </p>
-          <img
+          {/* <img
             src={StarPu}
             alt="A shining star"
             className="absolute right-10 top-8"
-          />
+          /> */}
         </div>
       </div>
     </div>

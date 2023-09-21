@@ -1,11 +1,36 @@
-import React from "react";
+import { useRef } from "react";
 
 import Star from "../../assets/images/star.png";
 import Input from "../utils/Input";
 import RegisterFormHeader from "./RegisterFormHeader";
 import Button from "../utils/Button";
 
-const RegisterForm = ({ onRegister }) => {
+const RegisterForm = ({ onRegister, category }) => {
+  const teamInputRef = useRef();
+  const phoneInputRef = useRef();
+  const emailInputRef = useRef();
+  const projectInputRef = useRef();
+
+  function registrationHandler() {
+    const inputs = {
+      team: teamInputRef.current.value,
+      phone: phoneInputRef.current.value,
+      email: emailInputRef.current.value,
+      project: emailInputRef.current.value,
+    };
+
+    if (
+      inputs.team === "" ||
+      inputs.phone === "" ||
+      inputs.email === "" ||
+      inputs.project === ""
+    ) {
+      alert("Invalid inputs");
+    }
+
+    onRegister(inputs);
+  }
+
   return (
     <div className="lg:bg-dark relative px-10 lg:px-20 py-10 z-10 overflow-hidden">
       <div className="hidden lg:block bg-purple-right absolute bottom-0 -right-5 w-1/2 h-full z-0" />
@@ -19,15 +44,29 @@ const RegisterForm = ({ onRegister }) => {
         <div className="flex flex-col gap-4 lg:flex-row lg:gap-8 mb-4">
           <Input
             label="Team's Name"
+            type="text"
             placeholder="Enter the name of your group"
+            value={teamInputRef}
           />
-          <Input label="Phone" placeholder="Enter your phone number" />
+          <Input
+            label="Phone"
+            type="number"
+            placeholder="Enter your phone number"
+            value={phoneInputRef}
+          />
         </div>
         <div className="flex flex-col gap-4 lg:flex-row lg:gap-8 mb-4">
-          <Input label="Email" placeholder="Enter your email address" />
+          <Input
+            label="Email"
+            type="email"
+            placeholder="Enter your email address"
+            value={emailInputRef}
+          />
           <Input
             label="Project Topic"
+            type="text"
             placeholder="What is your group's project topic"
+            value={projectInputRef}
           />
         </div>
         <div className="w-full flex flex-row gap-4 lg:gap-8 mb-4">
@@ -38,9 +77,9 @@ const RegisterForm = ({ onRegister }) => {
               style={{ color: "white" }}
             >
               <option>Select your category</option>
-              <option>Category 1</option>
-              <option>Category 2</option>
-              <option>Category 3</option>
+              {category.map((cat) => (
+                <option key={cat.id}>{cat.name}</option>
+              ))}
             </select>
           </div>
           <div className="w-3/12 lg:w-full">
@@ -66,7 +105,7 @@ const RegisterForm = ({ onRegister }) => {
           I agreed with the events terms and conditions and privacy policy
         </p>
       </div>
-      <Button onClick={onRegister}>Register Now</Button>
+      <Button onClick={registrationHandler}>Register Now</Button>
     </div>
   );
 };
