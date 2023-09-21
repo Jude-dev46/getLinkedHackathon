@@ -1,9 +1,9 @@
 import React from "react";
 
-import HeroImage from "../../assets/images/hero-image.png";
-import MobileHero from "../../assets/images/mobile-hero.png";
-import Star from "../../assets/images/star.png";
-import StarPu from "../../assets/images/star-pu.png";
+import HeroImage from "../../assets/hero-image.png";
+import MobileHero from "../../assets/mobile-hero.png";
+import Star from "../../assets/star.png";
+import StarPu from "../../assets/star-pu.png";
 
 const RegisterImage = () => {
   return (

@@ -13,11 +13,12 @@ export default {
       dark: "#0f172a",
     },
     backgroundImage: {
-      "purple-left": `url("./src/assets/images/purple-left.png")`,
-      "purple-right": `url("./src/assets/images/purple-right.png")`,
-      "mobile-purple": `url("./src/assets/images/mobile-purple.png")`,
-      "mobile-hero": `url("./src/assets/images/mobile-hero.png")`,
-      "button-grad": `url("./src/assets/images/buttonGra.png")`,
+      "purple-left": `url("./src/assets/purple-left.png")`,
+      "purple-right": `url("./src/assets/purple-right.png")`,
+      "mobile-purple": `url("./src/assets/mobile-purple.png")`,
+      "mobile-hero": `url("./src/assets/mobile-hero.png")`,
+      "button-grad": `url("./src/assets/buttonGra.png")`,
+      curve: "url('./src/assets/curve.png')",
     },
     // spacing: {
     //   100: "500px",

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 import { Navbar } from "./components";
-import StarWhite from "./assets/images/star-white.png";
-import StarPu from "./assets/images/star-pu.png";
+import StarWhite from "./assets/star-white.png";
+import StarPu from "./assets/star-pu.png";
 import RegisterImage from "./components/register/RegisterImage";
 import RegisterForm from "./components/register/RegisterForm";
 import Modal from "./components/Modal";

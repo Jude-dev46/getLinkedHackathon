@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-import Star from "../../assets/images/star.png";
+import Star from "../../assets/star.png";
 import Input from "../utils/Input";
 import RegisterFormHeader from "./RegisterFormHeader";
 import Button from "../utils/Button";

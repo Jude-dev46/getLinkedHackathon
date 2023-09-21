@@ -1,19 +1,15 @@
 import StarPu from "../assets/star-pu.png";
-import Idea from "../assets/idea.png";
+import Feature2Img from "../assets/feature2.png";
 
-const Feature1 = () => {
+const Feature2 = () => {
   return (
-    <section className="bg-blue-900 py-10 sm:py-16 lg:py-4">
-      <div className="bg-blue-900 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
+    <section className="bg-blue-900 py-10 sm:py-16 -lg:py-2 -mt-2">
+      <div className="bg-blue-900 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-          <div>
-            <img src={Idea} alt="the big idea" />
-          </div>
           <div className="relative flex flex-col self-center justify-center">
-            <h2 className="text-white font-bold text-4xl mb-10 font-sans">
-              Introduction to getlinked
-              <br />{" "}
-              <span className="text-blue-600 mt-4">techHackathon 1.0</span>
+            <h2 className="text-white font-bold text-4xl mb-5 font-sans">
+              Rules and
+              <br /> <span className="text-blue-600 mt-4">Guidelines</span>
             </h2>
             <p className="h-44 text-white font-sans">
               Our tech hackathon is a melting pot of visionaries, and its
@@ -30,11 +26,14 @@ const Feature1 = () => {
               className="absolute right-10 top-8"
             />
           </div>
+          <div>
+            <img src={Feature2Img} alt="rules and guidelines" />
+          </div>
         </div>
       </div>
-      <div className="border-b-[.05px] text-white"></div>
+      <div className="border-b-[.02px] text-white"></div>
     </section>
   );
 };
 
-export default Feature1;
+export default Feature2;

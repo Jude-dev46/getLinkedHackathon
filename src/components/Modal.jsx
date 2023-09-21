@@ -1,6 +1,6 @@
 import Button from "./utils/Button";
-import StarPu from "../assets/images/star-pu.png";
-import Congratulations from "../assets/images/congratulation.png";
+import StarPu from "../assets/star-pu.png";
+import Congratulations from "../assets/congratulation.png";
 
 const Modal = ({ closeModal }) => {
   return (
