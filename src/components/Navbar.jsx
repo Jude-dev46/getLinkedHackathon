@@ -13,6 +13,7 @@ const Navbar = () => {
   };
 
   return (
+    <>
     <div className="px-4 mx-auto sm:px-6 lg:px-8 bg-[#150E28] text-white w-full pt-4">
       {/* Desktop mode */}
       <div className="flex items-center justify-between h-16 lg:h-20 ">
@@ -139,9 +140,11 @@ const Navbar = () => {
         </ul>
         
       </div>
-      <div className="border-b-[.05px] text-white mt-4"> </div>
+      
      
     </div>
+    <div className="border-b-[.05px] text-white mt-4"> </div>
+    </>
     
   );
 };
