@@ -9,9 +9,9 @@ const Hero = () => {
     <div>
       <section className="bg-blue-900 py-8 sm:py-10  text-white text-center sm:text-start">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="flex flex-col text-[1.2rem] sm:text-3xl text-end pb-6 items-end font-semibold  ">
+          <div className='flex flex-col text-[1.2rem] sm:text-3xl items-center sm:text-end pb-6 sm:items-end font-semibold pt-4 '>
             <p>Igniting a Revolution in HR Innovation</p>
-            <img src={curve} alt="" className=" pt-2 w-[10rem] sm:w-auto" />
+            <img src={curve} alt="" className=" pt-2 w-[10rem] sm:w-auto self-end" />
           </div>
 
           <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2 text-white">
