@@ -15,7 +15,9 @@ const Hero = () => {
       <img src={curve} alt="" className=' pt-2 w-[10rem] sm:w-auto'/>
       </div>
       
-      <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2 text-white">
+     
+      <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2 text-white ">
+        
         <div>
           <div className='flex justify-end mr-[12rem]'>
             <img src={bulb} alt="" />
