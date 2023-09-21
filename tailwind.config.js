@@ -18,7 +18,7 @@ export default {
       "mobile-purple": `url("./src/assets/mobile-purple.png")`,
       "mobile-hero": `url("./src/assets/mobile-hero.png")`,
       "button-grad": `url("./src/assets/buttonGra.png")`,
-      'curve': "url('./src/assets/curve.png')",
+      curve: "url('./src/assets/curve.png')",
     },
     // spacing: {
     //   100: "500px",

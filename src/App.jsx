@@ -1,17 +1,16 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Register from "./Register";
-import { Navbar } from "./components";
-import { Hero } from "./components";
-import Feature1 from "./components/Feature1";
+import Home from "./Home";
 
 const App = () => {
   return (
-    <div className="bg-blue-900">
-      <Navbar />
-      <Hero />
-      {/* <Register /> */}
-      <Feature1 />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 export default App;
