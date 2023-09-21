@@ -5,12 +5,14 @@ import Home from "./Home";
 
 const App = () => {
   return (
+    <div className="bg-blue-900">
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
+    </div>
   );
 };
 export default App;
