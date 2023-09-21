@@ -3,8 +3,9 @@ import Idea from "../assets/idea.png";
 
 const Feature1 = () => {
   return (
-    <div className="bg-blue-900 w-full flex justify-center">
-      <div className="flex">
+    <section className="py-10 sm:py-16 lg:py-24">
+    <div className="bg-blue-900 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
         <div>
           <img src={Idea} alt="the big idea" />
         </div>
@@ -29,6 +30,7 @@ const Feature1 = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

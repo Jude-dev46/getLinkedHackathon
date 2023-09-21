@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-// import Hero from "./Hero";
+import Hero from "./Hero";
 // import CompaniesSlider from "./CompaniesSlider";
 // import Hero2 from "./Hero2";
 // import  MarketPlace  from "./MarketPlace";
@@ -10,8 +10,8 @@ import Navbar from "./Navbar";
 
 
 export {
-    Navbar
-    // Hero,
+    Navbar,
+    Hero,
     // CompaniesSlider,
     // Hero2,
     // MarketPlace,

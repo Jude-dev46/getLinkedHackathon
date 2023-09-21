@@ -13,9 +13,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="px-4 mx-auto sm:px-6 lg:px-8 bg-[#150E28] text-white w-full">
+    <div className="px-4 mx-auto sm:px-6 lg:px-8 bg-[#150E28] text-white w-full pt-4">
       {/* Desktop mode */}
-      <div className="flex items-center justify-between h-16 lg:h-20">
+      <div className="flex items-center justify-between h-16 lg:h-20 ">
         <div className="">
           <a href="#" title="" className="flex">
             <img className="w-auto h-6 sm:h-8" src={logo} alt="" />
@@ -137,13 +137,12 @@ const Navbar = () => {
             Register{" "}
           </li>
         </ul>
-        {/* <div className="my-4">
-          <button className="px-4 py-2 rounded-md bg-[#1A906B] font-bold">
-            Create Account
-          </button>
-        </div> */}
+        
       </div>
+      <div className="border-b-[.05px] text-white mt-4"> </div>
+     
     </div>
+    
   );
 };
 
