@@ -7,7 +7,7 @@ import FAQImg from "../assets/faq.png";
 const Feature4 = () => {
   return (
     <section className="bg-blue-900 py-10 sm:py-16 lg:py-4">
-      <div className="relative bg-blue-900 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
+      <div className="relative bg-blue-900 px-12 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
         <div className="grid items-center grid-cols-1 lg:grid-cols-2">
           <div className="flex flex-col self-center justify-center">
             <h2 className="text-white text-center lg:text-left font-bold text-4xl mb-4 font-sans">
@@ -58,7 +58,7 @@ const Feature4 = () => {
           className="absolute right-2 bottom-8"
         />
       </div>
-      <div className="border-b-[.05px] text-white"></div>
+      <div className="border-b-[.05px] text-blue-600"></div>
     </section>
   );
 };

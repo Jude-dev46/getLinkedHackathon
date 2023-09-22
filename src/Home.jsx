@@ -5,19 +5,27 @@ import { Hero } from "./components";
 import Feature1 from "./components/Feature1";
 import Feature2 from "./components/Feature2";
 import Feature3 from "./components/Feature3";
-import Feature4 from "./components/Feature4";
-import Feature6 from "./components/Feature6";
+import FAQ from "./components/FAQ";
+import Prizes from "./components/Prizes";
+import Sponsors from "./components/Partners";
+import Privacy from "./components/Privacy";
+import Footer from "./components/Footer";
+import Timeline from "./components/Timeline";
 
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <Navbar style={false} />
       <Hero />
       <Feature1 />
       <Feature2 />
       <Feature3 />
-      <Feature4 />
-      <Feature6 />
+      <FAQ />
+      <Timeline />
+      <Prizes />
+      <Sponsors />
+      <Privacy />
+      <Footer />
     </>
   );
 };

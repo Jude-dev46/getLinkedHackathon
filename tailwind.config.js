@@ -20,9 +20,6 @@ export default {
       "button-grad": `url("./src/assets/buttonGra.png")`,
       curve: "url('./src/assets/curve.png')",
     },
-    // spacing: {
-    //   100: "500px",
-    // },
     screens: {
       sm: "640px",
       md: "768px",

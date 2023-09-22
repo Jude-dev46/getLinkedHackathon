@@ -1,13 +1,15 @@
+import Star from "../assets/star.png";
 import StarPu from "../assets/star-pu.png";
 import StarWhiteBig from "../assets/starwhitebig.png";
+import Ellipse from "../assets/ellipse.png";
 import Feature3Img from "../assets/feature3.png";
 
 const Feature3 = () => {
   return (
-    <section className="bg-blue-900 py-10 sm:py-16 lg:py-4">
-      <div className="bg-blue-900 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
+    <section className="bg-blue-900 py-12 sm:py-16 lg:py-4">
+      <div className="bg-blue-900 px-12 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
         <div className="relative grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-          <div>
+          <div className="z-10">
             <img src={Feature3Img} alt="judging criteria" />
           </div>
           <div className="flex flex-col self-center justify-center">
@@ -65,9 +67,19 @@ const Feature3 = () => {
             </div>
           </div>
           <img
+            src={Ellipse}
+            alt="ellipse"
+            className="hidden lg:block absolute top-16 left-16"
+          />
+          <img
+            src={Star}
+            alt="A shining star"
+            className="absolute top-36 left-40 lg:hidden"
+          />
+          <img
             src={StarPu}
             alt="A shining star"
-            className="absolute left-32 top-8"
+            className="absolute -top-8 left-32 lg:left-32 lg:top-8"
           />
           <img
             src={StarWhiteBig}

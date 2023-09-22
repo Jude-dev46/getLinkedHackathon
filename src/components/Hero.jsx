@@ -14,8 +14,7 @@ import StarWhite from "../assets/star-white.png";
 
 const Hero = () => {
   return (
-    <div className=" relative bottom-10 bg-blue-900">
-      <div className="border-b-[.05px] text-white -mb-8"></div>
+    <div className=" relative bottom-10 bg-blue-900 -mb-12">
       <img
         src={purpleLeft}
         alt="purple lens flare"

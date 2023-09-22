@@ -5,7 +5,7 @@ import Idea from "../assets/idea.png";
 const Feature1 = () => {
   return (
     <section className="bg-blue-900 py-10 sm:py-16 lg:py-4">
-      <div className="bg-blue-900 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
+      <div className="bg-blue-900 px-12 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
           <div className="relative">
             <img src={Idea} alt="the big idea" />

@@ -3,10 +3,10 @@ import Trophy from "../assets/trophy.png";
 import StarPu from "../assets/star-pu.png";
 import StarWhiteBig from "../assets/starwhitebig.png";
 
-const Feature6 = () => {
+const Prizes = () => {
   return (
     <section className="bg-blue-900 py-10 sm:py-16 lg:py-12">
-      <div className="relative bg-blue-900 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
+      <div className="relative bg-blue-900 px-12 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
         <div className="grid grid-cols-1 gap-20 lg:grid-rows-2">
           <div className="relative lg:w-[80%] lg:h-[200px] flex flex-col items-center lg:items-end">
             <h2 className="text-white text-center lg:text-left font-bold text-4xl lg:mr-[177px] mb-2 font-sans">
@@ -54,9 +54,9 @@ const Feature6 = () => {
           className="hidden lg:block absolute right-80 top-20"
         />
       </div>
-      <div className="border-b-[.05px] text-white"></div>
+      <div className="border-b-[.05px] text-blue-600"></div>
     </section>
   );
 };
 
-export default Feature6;
+export default Prizes;
