@@ -70,7 +70,7 @@ const RegisterForm = ({ onRegister, category }) => {
           />
         </div>
         <div className="w-full flex flex-row gap-4 lg:gap-8 mb-4">
-          <div className="w-9/12 lg:w-full">
+          <div className="w-7/12 lg:w-full">
             <p className="text-white text-sm mb-2">Category</p>
             <select
               className="bg-dark w-full lg:w-64 h-12 p-2 border-2 border-white rounded-md text-sm lg:text-base"
@@ -82,7 +82,7 @@ const RegisterForm = ({ onRegister, category }) => {
               ))}
             </select>
           </div>
-          <div className="w-3/12 lg:w-full">
+          <div className="w-5/12 lg:w-full">
             <p className="text-white w-20 text-sm mb-2">Group Size</p>
             <select
               className="bg-dark w-full lg:w-64 h-12 p-2 border-2 border-white rounded-md text-base"
