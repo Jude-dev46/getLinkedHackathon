@@ -26,7 +26,7 @@ const Feature1 = () => {
               <br />{" "}
               <span className="text-blue-600 mt-4">techHackathon 1.0</span>
             </h2>
-            <p className="h-44 text-white font-sans">
+            <p className="h-fit object-contain text-white font-sans">
               Our tech hackathon is a melting pot of visionaries, and its
               purpose is as clear as day: to shape the future. Whether you're a
               coding genius, a design maverick or a concept wizard, you'll have

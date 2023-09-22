@@ -60,7 +60,7 @@ const Feature3 = () => {
               requirements.
             </p>
             <div
-              className="w-44 lg:-mt-12 inline-flex items-center justify-center px-2 py-2.5 text-base font-semibold button-gradient-bg rounded-md hover:cursor-pointer hover:text-white transition-all duration-200 focu focus:text-white"
+              className="w-44 mt-3 lg:-mt-12 inline-flex items-center justify-center px-2 py-2.5 text-base font-semibold button-gradient-bg rounded-md hover:cursor-pointer hover:text-white transition-all duration-200 focu focus:text-white"
               role="button"
             >
               Read More

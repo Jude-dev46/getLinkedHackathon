@@ -76,15 +76,15 @@ const Timeline = () => {
                   The getLinked hackathon is formally announced
                   <br /> to the general public and team begin to get registered.
                 </p>
-                <p className="w-[300px] lg:w-full text-blue-600 font-bold mb-2 text-left">
+                <p className="w-[230px] lg:w-full text-blue-600 font-bold mb-2 text-left">
                   November 18, 2023
                 </p>
               </div>
               <div className="mb-5">
-                <p className="w-[300px] lg:w-full text-blue-600 font-bold mb-3 text-left">
+                <p className="w-[230px] lg:w-full text-blue-600 font-bold mb-3 text-left">
                   Team registration begins
                 </p>
-                <p className="w-[300px] lg:w-full text-white text-sm text-left">
+                <p className="w-[230px] lg:w-full text-white text-sm text-left">
                   Interested teams can now show their interest in the
                   <br /> getLinked hackathon 1.0 2023 by proceeding to register.
                 </p>
@@ -110,27 +110,27 @@ const Timeline = () => {
                 </div>
               </div>
               <div className="mb-5">
-                <p className="w-[300px] lg:w-full text-blue-600 font-bold -mt-5 mb-3 text-left">
+                <p className="w-[230px] lg:w-full text-blue-600 font-bold -mt-5 mb-3 text-left">
                   Announcement of the accepted teams
                   <br />
                   and ideas
                 </p>
-                <p className="w-[300px] lg:w-full text-white text-sm text-left">
+                <p className="w-[230px] lg:w-full text-white text-sm text-left">
                   All teams whom idea has been accepted into getLinked tech
                   <br />
                   hackathon are formally announced
                 </p>
               </div>
               <div className="mb-5">
-                <p className="w-[300px] lg:w-full text-blue-600 font-bold mb-3 text-left">
+                <p className="w-[230px] lg:w-full text-blue-600 font-bold mb-3 text-left">
                   November 18, 2023
                 </p>
               </div>
               <div className="mb-5">
-                <p className="w-[300px] lg:w-full text-blue-600 font-bold mb-3 text-left">
+                <p className="w-[230px] lg:w-full text-blue-600 font-bold mb-3 text-left">
                   Demo day
                 </p>
-                <p className="w-[300px] lg:w-full text-white text-sm text-left">
+                <p className="w-[230px] lg:w-full text-white text-sm text-left">
                   Teams get the opportunity to pitch their projects to Judges
                   <br />
                   The winner of the hackathon will also be announced on
