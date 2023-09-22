@@ -65,7 +65,7 @@ const Timeline = () => {
             <img
               src={Thread}
               alt="the timeline"
-              className="h-[970px] lg:h-full -ml-3"
+              className="h-[970px] lg:h-full -ml-6"
             />
             <div className="flex flex-col h-[770px] lg:h[1017px] gap-12 lg:gap-20 self-center mt-[-165px] lg:mt-32">
               <div className="mb-5">
