@@ -67,23 +67,25 @@ const Register = () => {
   }
 
   return (
-    <div className="bg-blue-900 w-full h-full lg:h-[100dvh] overflow-hidden">
+    <div className="bg-blue-900 w-full lg:h-[100vh] overflow-hidden">
       {isOpen && <Modal closeModal={closeModalHandler} />}
-      <Navbar />
-      <div className="relative flex flex-col lg:flex-row lg:items-center mb-5 overflow-hidden">
+      <Navbar style={true} />
+
+      <div className="relative flex flex-col lg:flex-row lg:items-center lg:mx-40 mb-5">
         <p className="block absolute top-10 left-20 lg:hidden text-blue-600 font-bold text-sm mb-4">
           Register
         </p>
         <img
           src={StarWhite}
           alt="A shining star"
-          className=" hidden lg:block absolute lg:bottom-6 lg:right-60"
+          className=" hidden lg:block absolute lg:-bottom-3 lg:right-[120px]"
         />
         <img
           src={StarPu}
           alt="A shining star"
           className="absolute bottom-64 right-4 lg:hidden"
         />
+
         <RegisterImage />
         <RegisterForm onRegister={registrationHandler} category={category} />
       </div>

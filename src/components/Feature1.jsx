@@ -1,3 +1,4 @@
+import Arrow from "../assets/arrow.png";
 import StarPu from "../assets/star-pu.png";
 import Idea from "../assets/idea.png";
 
@@ -6,8 +7,18 @@ const Feature1 = () => {
     <section className="bg-blue-900 py-10 sm:py-16 lg:py-4">
       <div className="bg-blue-900 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-          <div>
+          <div className="relative">
             <img src={Idea} alt="the big idea" />
+            <img
+              src={Arrow}
+              alt="a spiral arrow"
+              className="absolute bottom-0 right-10"
+            />
+            <img
+              src={StarPu}
+              alt="A shining star"
+              className="absolute left-0 top-36"
+            />
           </div>
           <div className="relative flex flex-col self-center justify-center">
             <h2 className="text-white font-bold text-4xl mb-10 font-sans">

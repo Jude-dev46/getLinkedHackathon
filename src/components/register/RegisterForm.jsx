@@ -32,12 +32,12 @@ const RegisterForm = ({ onRegister, category }) => {
   }
 
   return (
-    <div className="lg:bg-dark relative px-10 lg:px-20 py-10 z-10 overflow-hidden">
-      <div className="hidden lg:block bg-purple-right absolute bottom-0 -right-5 w-1/2 h-full z-0" />
+    <div className="lg:bg-dark relative px-5 lg:h-[85vh] lg:flex lg:flex-col lg:justify-center lg:px-20 py-10 rounded-lg mx-5 lg:mr-10 -lg:mt-10">
+      <div className="hidden lg:block bg-purple-right absolute bottom-0 -right-5 w-1/2 z-0" />
       <img
         src={Star}
         alt="A shining star"
-        className="absolute left-3 top-40 lg:left-96 lg:top-5"
+        className="absolute -left-2 top-40 lg:left-96 lg:top-5"
       />
       <RegisterFormHeader />
       <div>

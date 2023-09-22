@@ -8,7 +8,7 @@ const Input = ({ label, placeholder, value, type }) => {
         type={type}
         name="My input"
         placeholder={placeholder}
-        className="bg-dark w-full lg:w-64 h-12 p-2 border-2 border-white rounded-md text-base text-white"
+        className="bg-dark w-full lg:w-64 h-10 p-2 border-2 border-white rounded-md text-base text-white"
         ref={value}
       />
     </div>

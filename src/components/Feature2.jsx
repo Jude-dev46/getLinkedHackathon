@@ -1,9 +1,10 @@
 import StarPu from "../assets/star-pu.png";
+import StarWhiteBig from "../assets/starwhitebig.png";
 import Feature2Img from "../assets/feature2.png";
 
 const Feature2 = () => {
   return (
-    <section className="bg-blue-900 py-10 sm:py-16 -lg:py-2 -mt-2">
+    <section className="bg-blue-900 py-10 sm:py-16 -mt-2">
       <div className="bg-blue-900 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
           <div className="relative flex flex-col self-center justify-center">
@@ -23,7 +24,12 @@ const Feature2 = () => {
             <img
               src={StarPu}
               alt="A shining star"
-              className="absolute right-10 top-8"
+              className="absolute right-[300px] -top-10"
+            />
+            <img
+              src={StarWhiteBig}
+              alt="A shining star"
+              className="absolute -right-10 bottom-8"
             />
           </div>
           <div>

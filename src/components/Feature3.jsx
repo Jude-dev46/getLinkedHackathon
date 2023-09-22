@@ -1,15 +1,16 @@
 import StarPu from "../assets/star-pu.png";
+import StarWhiteBig from "../assets/starwhitebig.png";
 import Feature3Img from "../assets/feature3.png";
 
 const Feature3 = () => {
   return (
     <section className="bg-blue-900 py-10 sm:py-16 lg:py-4">
       <div className="bg-blue-900 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
-        <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
+        <div className="relative grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
           <div>
             <img src={Feature3Img} alt="judging criteria" />
           </div>
-          <div className="relative flex flex-col self-center justify-center">
+          <div className="flex flex-col self-center justify-center">
             <h2 className="text-white font-bold text-4xl mb-5 font-sans">
               Judging Criteria
               <br /> <span className="text-blue-600 mt-4">Key attriutes</span>
@@ -57,17 +58,22 @@ const Feature3 = () => {
               requirements.
             </p>
             <div
-              className="w-44 -mt-12 inline-flex items-center justify-center px-2 py-2.5 text-base font-semibold button-gradient-bg rounded-md hover:cursor-pointer hover:text-white transition-all duration-200 focu focus:text-white"
+              className="w-44 lg:-mt-12 inline-flex items-center justify-center px-2 py-2.5 text-base font-semibold button-gradient-bg rounded-md hover:cursor-pointer hover:text-white transition-all duration-200 focu focus:text-white"
               role="button"
             >
               Read More
             </div>
-            <img
-              src={StarPu}
-              alt="A shining star"
-              className="absolute right-10 top-8"
-            />
           </div>
+          <img
+            src={StarPu}
+            alt="A shining star"
+            className="absolute left-32 top-8"
+          />
+          <img
+            src={StarWhiteBig}
+            alt="A shining white star"
+            className="absolute left-[550px] bottom-8"
+          />
         </div>
       </div>
       <div className="border-b-[.05px] text-white"></div>
