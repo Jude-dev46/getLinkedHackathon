@@ -6,6 +6,7 @@ import StarWhiteBig from "../assets/starwhitebig.png";
 const Prizes = () => {
   return (
     <section className="bg-blue-900 py-10 sm:py-16 lg:py-12">
+      <div className="border-b-[.05px] text-blue-600 mb-5"></div>
       <div className="relative bg-blue-900 px-12 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
         <div className="grid grid-cols-1 gap-20 lg:grid-rows-2">
           <div className="relative lg:w-[80%] lg:h-[200px] flex flex-col items-center lg:items-end">
