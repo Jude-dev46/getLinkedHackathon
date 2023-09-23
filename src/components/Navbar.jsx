@@ -18,9 +18,8 @@ const Navbar = ({ style }) => {
   return (
     <>
       <div
-        className={`px-4 mx-auto sm:px-6 lg:px-36 bg-[#150E28] text-white w-full z-50 ${
-          !style ? "mb-10 py-4" : ""
-        }`}
+        className={`px-4 mx-auto sm:px-6 lg:px-36 bg-[#150E28] text-white w-full z-50 ${!style ? "mb-10 sm:py-4" : ""
+          }`}
       >
         {/* Desktop mode */}
         <div className="flex items-center justify-between h-20">
@@ -69,24 +68,42 @@ const Navbar = ({ style }) => {
             <div className="w-px h-/20"></div>
             <Link to="/register">
               <li
+                href="#"
                 title=""
-                className={`inline-flex items-center justify-center px-8 py-2.5 text-base font-semibold ${
-                  !style ? "button-gradient-bg" : ""
-                } rounded-md hover:text-white transition-all duration-200 focus:text-white border-2 border-blue-600 hover:animate-pulse`}
+                className="my-8 inline-flex items-center justify-center px-12 py-2.5 text-base font-semibold button-gradient-bg rounded-md   hover:text-white transition-all duration-200 focu focus:text-white"
                 role="button"
-              >
-                Register
+              > Register
+                {/* <Link to="/register">Register</Link> */}
               </li>
             </Link>
           </ul>
 
           <div className="lg:hidden text-white">
             {toggle ? (
-              <RiCloseLine size={40} onClick={handleClick1} />
+              <svg
+                width="23" 
+                height="23"
+                 viewBox="0 0 23 23" 
+                 fill="none" 
+                 xmlns="http://www.w3.org/2000/svg" 
+                 className="cursor-pointer"
+                onClick={handleClick1} >
+                  
+                <circle cx="11.5" cy="11.5" r="11" stroke="url(#paint0_linear_3149_6)" />
+                <path d="M6.3075 16.6925C6.50446 16.8894 6.77155 17 7.05005 17C7.32854 17 7.59563 16.8894 7.79259 16.6925L11.5063 12.9787L15.2201 16.6925C15.4182 16.8838 15.6835 16.9897 15.9589 16.9873C16.2342 16.9849 16.4977 16.8744 16.6924 16.6797C16.8871 16.485 16.9976 16.2216 17 15.9462C17.0024 15.6708 16.8965 15.4055 16.7052 15.2074L12.9914 11.4937L16.7052 7.77991C16.8965 7.58182 17.0024 7.31652 17 7.04114C16.9976 6.76577 16.8871 6.50235 16.6924 6.30762C16.4977 6.11289 16.2342 6.00243 15.9589 6.00004C15.6835 5.99765 15.4182 6.10351 15.2201 6.29482L11.5063 10.0086L7.79259 6.29482C7.5945 6.10351 7.3292 5.99765 7.05383 6.00004C6.77845 6.00243 6.51503 6.11289 6.3203 6.30762C6.12557 6.50235 6.01511 6.76577 6.01272 7.04114C6.01033 7.31652 6.11619 7.58182 6.3075 7.77991L10.0213 11.4937L6.3075 15.2074C6.11061 15.4044 6 15.6715 6 15.95C6 16.2284 6.11061 16.4955 6.3075 16.6925Z" fill="#F8F8F8" />
+                <defs>
+                  <linearGradient id="paint0_linear_3149_6" x1="11.5" y1="0" x2="11.5" y2="23" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#903AFF" />
+                    <stop offset="1" stop-color="#FF26B9" />
+                  </linearGradient>
+                </defs>
+
+              </svg>
+
             ) : (
               <svg
-                width="30"
-                height="30"
+                width="23"
+                height="23"
                 viewBox="0 0 19 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -104,9 +121,8 @@ const Navbar = ({ style }) => {
 
         {/* Mobile mode */}
         <div
-          className={`absolute z-10 p-4 bg-[#150E28] w-full left-0 px-8  lg:hidden transform transition-all duration-500 ease-in-out ${
-            toggle ? "translate-x-0" : "-translate-x-full"
-          }`}
+          className={`absolute z-10 p-4 bg-[#150E28] w-full left-0 px-8  lg:hidden transform transition-all duration-500 ease-in-out ${toggle ? "translate-x-0" : "-translate-x-full"
+            }`}
         >
           <ul>
             <li

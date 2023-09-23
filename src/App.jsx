@@ -6,7 +6,7 @@ import Contact from "./Contact";
 
 const App = () => {
   return (
-    <div className=" overflow-x-hidden">
+    <div className=" overflow-x-hidden font-primary bg-blue-900">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
