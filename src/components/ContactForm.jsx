@@ -83,13 +83,22 @@ const ContactForm = ({ onContact }) => {
           />
         </div>
         <div className="flex flex-col gap-4 lg:flex-row lg:gap-8 mb-4">
-          <Input
+          {/* <Input
             type="text"
             placeholder="Send a message"
             value={messageInputRef}
             style={true}
             message={true}
-          />
+          /> */}
+          
+                        <textarea
+                            className="w-full bg-dark text-white border-[1px] border-white placeholder-white outline-primary shadow-md rounded-md px-3 lg:px-5 py-2 h-[119px] custom-scroll-bar resize-none"
+                            rows={5}
+                            placeholder="Message"
+                            name="message"
+                            // value={nameInputRef?.cu}
+                            ref={messageInputRef}
+                        />
         </div>
       </div>
       <div className="flex justify-center lg:self-center mt-2">

@@ -10,8 +10,8 @@ const Input = ({ label, placeholder, value, type, style, message }) => {
         placeholder={placeholder}
         className={`bg-dark w-full ${
           style ? "lg:w-96" : "lg:w-64"
-        } h-10 p-2 border-2 border-white rounded-md text-base text-white ${
-          message ? "h-36 align-top" : "lg:h-10"
+        } h-10 p-2  border-2 border-white rounded-md text-base text-white ${
+          message ? "h-36 -pt-16" : "lg:h-10"
         }`}
         ref={value}
       />
