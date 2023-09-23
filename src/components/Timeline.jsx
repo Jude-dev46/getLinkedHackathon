@@ -4,7 +4,7 @@ import StarWhiteBig from "../assets/starwhitebig.png";
 
 const Timeline = () => {
   return (
-    <section className="bg-blue-900 py-10 sm:py-16 lg:py-4">
+    <section className="bg-blue-900 pt-10 sm:pt-16 lg:pt-4 h-[1300px]">
       <div className="bg-blue-900 px-12 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
         <div className="grid items-start justify-center grid-rows-1 gap-12 lg:grid-rows-2">
           <div className="relative flex flex-col self-start justify-center text-center">

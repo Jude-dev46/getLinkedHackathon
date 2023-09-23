@@ -3,10 +3,23 @@ import StarPu from "../assets/star-pu.png";
 import StarWhiteBig from "../assets/starwhitebig.png";
 import Ellipse from "../assets/ellipse.png";
 import Feature3Img from "../assets/feature3.png";
+import { purpleRight } from "../assets";
+import { purpleLeft } from "../assets";
+
 
 const Feature3 = () => {
   return (
-    <section className="bg-blue-900 py-12 sm:py-16 lg:py-4">
+    <section className="bg-blue-900 pt-20 sm:pt-16 lg:pt-8 relative ">
+      {/* desktop mode */}
+      <img src={purpleRight} alt="purple lens flare" className="hidden lg:block absolute pointer-events-none top-[-550px] right-[-350px] mix-blend-hard-light  " />
+      <img src={purpleLeft} alt="purple lens flare" className="hidden lg:block absolute pointer-events-none bottom-[0px] left-[0px] mix-blend-hard-light " />
+      <img src={purpleRight} alt="purple lens flare" className="hidden lg:block absolute pointer-events-none bottom-[0px] right-[-250px] mix-blend-hard-light  " />
+
+
+       {/* mobile glow */}
+       <img src={purpleLeft} alt="purple lens flare" className=" lg:hidden absolute pointer-events-none top-[80px] left-[0px] mix-blend-hard-light " />
+      <img src={purpleRight} alt="purple lens flare" className=" lg:hidden absolute pointer-events-none bottom-[20px] right-[-220px] mix-blend-hard-light  " />
+
       <div className="bg-blue-900 px-12 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
         <div className="relative grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
           <div className="z-10">

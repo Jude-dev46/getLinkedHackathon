@@ -4,10 +4,19 @@ import StarWhiteBig from "../assets/starwhitebig.png";
 import StarWhiteSmall from "../assets/star1.png";
 import Feature2Img from "../assets/feature2.png";
 
+import { purpleRight } from "../assets";
 const Feature2 = () => {
   return (
     <>
-      <section className="bg-blue-900 h-[650px] lg:h-full py-10 overflow-hidden">
+      <section className="bg-blue-900 h-[700px] lg:h-full pt-20 overflow-hidden relative lg:pt-8 ">
+        {/* desktop glow */}
+      <img src={purpleLeft} alt="purple lens flare" className="hidden lg:block absolute pointer-events-none top-[-300px] left-[230px] mix-blend-hard-light " />
+      <img src={purpleRight} alt="purple lens flare" className="hidden lg:block absolute pointer-events-none top-[40px] right-[-250px] mix-blend-hard-light  " />
+       
+       {/* mobile glow */}
+       <img src={purpleLeft} alt="purple lens flare" className=" lg:hidden absolute pointer-events-none top-[-100px] left-[0px] mix-blend-hard-light " />
+      <img src={purpleRight} alt="purple lens flare" className=" lg:hidden absolute pointer-events-none top-[70px] right-[-220px] mix-blend-hard-light  " />
+
         <div className="bg-blue-900 px-12 mx-auto max-w-7xl sm:px-6 lg:px-8 -mt-10">
           <div className="grid items-center grid-cols-1 lg:gap-12 lg:grid-cols-2">
             <div className="relative text-center lg:text-left flex flex-col order-last lg:order-first self-center justify-center mb-5">
