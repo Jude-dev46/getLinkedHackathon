@@ -6,6 +6,7 @@ import { chainStar } from "../assets";
 import { curve } from "../assets";
 import { bulb } from "../assets";
 import { purpleLeft } from "../assets";
+import { purpleRight } from "../assets";
 import Star from "../assets/star.png";
 import StarWhiteBig from "../assets/starwhitebig.png";
 import StarSmall from "../assets/sstar.png";
@@ -14,12 +15,18 @@ import StarWhite from "../assets/star-white.png";
 
 const Hero = () => {
   return (
-    <div className=" relative bottom-10 bg-blue-900 -mb-12">
-      <img
-        src={purpleLeft}
-        alt="purple lens flare"
-        className="hidden lg:block absolute pointer-events-none lg:top-[-250px] lg:left-[-10px] mix-blend-hard-light"
-      />
+
+   
+    
+
+    
+    <div className=" relative bottom-10 bg-blue-900 -mb-12 ">
+     <div>
+
+     
+     <img src={purpleLeft} alt="purple lens flare" className="hidden lg:block absolute pointer-events-none lg:top-[-100px] lg:left-[0px] mix-blend-hard-light " />
+      <img src={purpleRight} alt="purple lens flare" className="hidden lg:block absolute pointer-events-none lg:bottom-[40px] lg:right-[-50px] mix-blend-hard-light  " />
+      </div>
       <img src={StarWhite} className="absolute top-24 left-36 lg:hidden" />
       <img
         src={StarWhiteBig}
@@ -45,7 +52,7 @@ const Hero = () => {
       <img src={Star2} className="hidden lg:absolute top-24 lg:left-36" />
       <section className="py-8 sm:py-10 text-white text-center sm:text-start">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="flex flex-col text-[1.2rem] sm:text-3xl items-center sm:text-end pb-6 sm:items-end font-semibold pt-4 ">
+          <div className="flex flex-col text-[1.0rem] sm:text-3xl items-center sm:text-end pb-6 sm:items-end font-semibold pt-4 ">
             <p>Igniting a Revolution in HR Innovation</p>
             <img
               src={curve}
@@ -73,7 +80,7 @@ const Hero = () => {
                 />
               </h1>
 
-              <p className="mt-8 text-base text-black sm:text-xl">
+              <p className="mt-8 text-base text-black sm:text-xl ">
                 Participate in getlinked tech Hackathon 2023 stand a chance to
                 win a Big prize
               </p>
@@ -86,7 +93,7 @@ const Hero = () => {
                   Register
                 </div>
               </Link>
-              <div className="space-x-4 text-3xl font-bold">
+              <div className="space-x-4 text-5xl  font-unicaone">
                 <span>
                   00<span className="text-sm">H</span>
                 </span>
@@ -98,14 +105,15 @@ const Hero = () => {
                 </span>
               </div>
             </div>
-            <div className="self-end">
-              <img className="w-full" src={heroImage} alt="" />
+            <div className="self-end ">
+              <img className="w-full " src={heroImage} alt="" />
             </div>
           </div>
         </div>
         <div className="border-b-[.05px] text-white"></div>
       </section>
     </div>
+    
   );
 };
 

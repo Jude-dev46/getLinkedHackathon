@@ -5,10 +5,16 @@ import Star from "../assets/star.png";
 import StarPu from "../assets/star-pu.png";
 import StarPuSmall from "../assets/starsmall.png";
 import StarWhite from "../assets/star-white.png";
+import { purpleLeft } from "../assets";
 
 const Privacy = () => {
   return (
-    <section className="bg-blue-900 py-10 sm:py-16 lg:py-4">
+    <section className="bg-blue-900 py-10 sm:py-16 lg:py-4 relative">
+      {/* desktop */}
+      <img src={purpleLeft} alt="purple lens flare" className="hidden lg:block absolute pointer-events-none top-[350px] rightt-[-300px]  z-10 mix-blend-hard-light" />
+      {/* mobile */}
+      <img src={purpleLeft} alt="purple lens flare" className=" lg:hidden absolute pointer-events-none top-[590px] left-[-40px] mix-blend-hard-light z-10 " />
+      
       <div className="bg-blue-900 px-12 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
           <div className="relative flex flex-col self-center justify-center">
