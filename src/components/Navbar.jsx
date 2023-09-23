@@ -31,40 +31,40 @@ const Navbar = ({ style }) => {
           </div>
           <ul className="hidden ml-auto lg:flex lg:items-center lg:justify-center lg:space-x-10">
             <li
-              href="#"
+              href="#timeline"
               title=""
-              className="text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
+              className="text-base font-semibold  transition-all duration-200 hover:text-opacity-80 hover:text-blue-600 hover:cursor-pointer"
             >
               {" "}
               Timeline
             </li>
 
             <li
-              href="#"
+              href="#overview"
               title=""
-              className="text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
+              className="text-base font-semibold  transition-all duration-200 hover:text-opacity-80 hover:text-blue-600 hover:cursor-pointer"
             >
               {" "}
               Overview{" "}
             </li>
 
             <li
-              href="#"
+              href="#faq"
               title=""
-              className="text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
+              className="text-base font-semibold  transition-all duration-200 hover:text-opacity-80 hover:text-blue-600 hover:cursor-pointer"
             >
               {" "}
               FAQs{" "}
             </li>
 
-            <li
-              href="#"
+            <Link
+              to="/contact"
               title=""
-              className="text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
+              className="text-base font-semibold  transition-all duration-200 hover:text-opacity-80 hover:text-blue-600 hover:cursor-pointer"
             >
               {" "}
               Contact
-            </li>
+            </Link>
 
             <div className="w-px h-/20"></div>
             <Link to="/register">
@@ -72,7 +72,7 @@ const Navbar = ({ style }) => {
                 title=""
                 className={`inline-flex items-center justify-center px-8 py-2.5 text-base font-semibold ${
                   !style ? "button-gradient-bg" : ""
-                } rounded-md hover:text-white transition-all duration-200 focus:text-white border-2 border-blue-600`}
+                } rounded-md hover:text-white transition-all duration-200 focus:text-white border-2 border-blue-600 hover:animate-pulse`}
                 role="button"
               >
                 Register
@@ -110,7 +110,7 @@ const Navbar = ({ style }) => {
         >
           <ul>
             <li
-              href="#"
+              href="#timeline"
               title=""
               className="p-4 text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
             >
@@ -119,7 +119,7 @@ const Navbar = ({ style }) => {
             </li>
 
             <li
-              href="#"
+              href="#overview"
               title=""
               className="p-4 text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
             >
@@ -128,7 +128,7 @@ const Navbar = ({ style }) => {
             </li>
 
             <li
-              href="#"
+              href="#faq"
               title=""
               className="p-4 text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
             >
@@ -136,14 +136,15 @@ const Navbar = ({ style }) => {
               FAQs{" "}
             </li>
 
-            <li
-              href="#"
-              title=""
-              className="p-4 text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
-            >
-              {" "}
-              Contact
-            </li>
+            <Link to="/contact">
+              <li
+                title=""
+                className="p-4 text-base font-semibold  transition-all duration-200 hover:text-opacity-80"
+              >
+                {" "}
+                Contact
+              </li>
+            </Link>
 
             <li
               href="#"

@@ -21,7 +21,7 @@ const RegisterForm = ({ onRegister, category }) => {
 
     if (
       inputs.team === "" ||
-      inputs.phone === "" ||
+      inputs.phone < 11 ||
       inputs.email === "" ||
       inputs.project === ""
     ) {
@@ -30,6 +30,10 @@ const RegisterForm = ({ onRegister, category }) => {
 
     onRegister(inputs);
   }
+  teamInputRef.current.value = "";
+  phoneInputRef.current.value = "";
+  emailInputRef.current.value = "";
+  projectInputRef.current.value = "";
 
   return (
     <div className="lg:bg-dark relative px-5 lg:h-[85vh] lg:flex lg:flex-col lg:justify-center lg:px-20 py-10 rounded-lg mx-5 lg:mr-10 -lg:mt-10">
