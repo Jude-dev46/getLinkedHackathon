@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useState, useRef } from "react";
 
 import Star from "../assets/star.png";
 import StarPu from "../assets/star-pu.png";
@@ -8,6 +8,7 @@ import Button from "../components/utils/Button";
 import ContactFormHeader from "./ContactHeader";
 
 const ContactForm = ({ onContact }) => {
+  const [isLoading, setIsLoading] = useState(false);
   const nameInputRef = useRef();
   const emailInputRef = useRef();
   const messageInputRef = useRef();
@@ -39,7 +40,7 @@ const ContactForm = ({ onContact }) => {
   }
 
   return (
-    <div className="lg:bg-dark relative lg:h-[75vh] lg:flex lg:flex-col lg:justify-center lg:px-20 lg:py-10 rounded-lg lg:mr-10 lg:mt-0">
+    <div className="lg:bg-dark relative lg:h-[85vh] lg:flex lg:flex-col lg:justify-center lg:px-20 lg:py-10 rounded-lg lg:mr-10 lg:mt-0">
       <img
         src={StarPu}
         alt="A shining star"
@@ -97,6 +98,7 @@ const ContactForm = ({ onContact }) => {
           Submit
         </Button>
       </div>
+      {isLoading && <p className="text-white text-sm mt-2">Submitting...</p>}
       <img
         src={StarWhiteBig}
         alt="A shining star"
