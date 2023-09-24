@@ -142,12 +142,12 @@ const Timeline = () => {
             <img
               src={StarPu}
               alt="A shining star"
-              className="absolute left-24 -top-8 lg:left-40 lg:top-12"
+              className="absolute left-24 -top-8 lg:left-40 lg:top-12 animate-pulse"
             />
             <img
               src={StarWhiteBig}
               alt="A shining star"
-              className="absolute right-12 top-[520px] lg:right-40 lg:top-[400px]"
+              className="absolute right-12 top-[520px] lg:right-40 lg:top-[400px] animate-pulse"
             />
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 
 import { heroImage } from "../assets";
 import { chainStar } from "../assets";
@@ -15,45 +16,61 @@ import StarWhite from "../assets/star-white.png";
 
 const Hero = () => {
   return (
-
-   
-    
-
-    
     <div className=" relative bottom-10 bg-blue-900 -mb-12 ">
-     <div>
-
-     
-     <img src={purpleLeft} alt="purple lens flare" className="hidden lg:block absolute pointer-events-none lg:top-[-100px] lg:left-[0px] mix-blend-hard-light " />
-      <img src={purpleRight} alt="purple lens flare" className="hidden lg:block absolute pointer-events-none lg:bottom-[40px] lg:right-[-50px] mix-blend-hard-light  " />
+      <div>
+        <img
+          src={purpleLeft}
+          alt="purple lens flare"
+          className="hidden lg:block absolute pointer-events-none lg:top-[-100px] lg:left-[0px] mix-blend-hard-light animate-pulse"
+        />
+        <img
+          src={purpleRight}
+          alt="purple lens flare"
+          className="hidden lg:block absolute pointer-events-none lg:bottom-[40px] lg:right-[-50px] mix-blend-hard-light animate-pulse "
+        />
       </div>
-      <img src={StarWhite} className="absolute top-24 left-36 lg:hidden" />
+      <img
+        src={StarWhite}
+        className="absolute top-24 left-36 lg:hidden animate-pulse"
+      />
       <img
         src={StarWhiteBig}
-        className="hidden lg:block absolute top-24 left-36"
+        className="hidden lg:block absolute top-24 left-36 animate-pulse"
       />
       <img
         src={Star}
-        className="hidden lg:absolute lg:top-32 lg:left-[600px]"
+        className="hidden lg:absolute lg:top-32 lg:left-[600px] animate-pulse"
       />
       <img
         src={Star}
-        className="hidden lg:block absolute lg:top-32 lg:left-[600px]"
+        className="hidden lg:block absolute lg:top-32 lg:left-[600px] animate-pulse"
       />
-      <img src={StarSmall} className="absolute top-20 right-16 lg:hidden" />
       <img
         src={StarSmall}
-        className="absolute top-[350px] right-[108px] lg:hidden"
+        className="absolute top-20 right-16 lg:hidden animate-pulse"
+      />
+      <img
+        src={StarSmall}
+        className="absolute top-[350px] right-[108px] lg:hidden animate-pulse"
       />
       <img
         src={Star}
-        className="hidden lg:block absolute lg:bottom-32 lg:left-[500px]"
+        className="hidden lg:block absolute lg:bottom-32 lg:left-[500px] animate-pulse"
       />
       <img src={Star2} className="hidden lg:absolute top-24 lg:left-36" />
       <section className="py-8 sm:py-10 text-white text-center sm:text-start">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex flex-col text-[1.0rem] sm:text-3xl items-center sm:text-end pb-6 sm:items-end font-semibold pt-4 ">
-            <p>Igniting a Revolution in HR Innovation</p>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("GetLinked Hackathon 1.0")
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("Igniting a Revolution in HR Innovation")
+                  .start();
+              }}
+            />
             <img
               src={curve}
               alt=""
@@ -113,7 +130,6 @@ const Hero = () => {
         <div className="border-b-[.05px] text-white"></div>
       </section>
     </div>
-    
   );
 };
 

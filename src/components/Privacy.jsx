@@ -11,10 +11,18 @@ const Privacy = () => {
   return (
     <section className="bg-blue-900 py-10 sm:py-16 lg:py-4 relative">
       {/* desktop */}
-      <img src={purpleLeft} alt="purple lens flare" className="hidden lg:block absolute pointer-events-none top-[350px] rightt-[-300px]  z-10 mix-blend-hard-light" />
+      <img
+        src={purpleLeft}
+        alt="purple lens flare"
+        className="hidden lg:block absolute pointer-events-none top-[350px] rightt-[-300px]  z-10 mix-blend-hard-light"
+      />
       {/* mobile */}
-      <img src={purpleLeft} alt="purple lens flare" className=" lg:hidden absolute pointer-events-none top-[590px] left-[-40px] mix-blend-hard-light z-10 " />
-      
+      <img
+        src={purpleLeft}
+        alt="purple lens flare"
+        className=" lg:hidden absolute pointer-events-none top-[590px] left-[-40px] mix-blend-hard-light z-10 "
+      />
+
       <div className="bg-blue-900 px-12 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
           <div className="relative flex flex-col self-center justify-center">
@@ -69,12 +77,12 @@ const Privacy = () => {
             <img
               src={Star}
               alt="A shining star"
-              className="absolute left-80 top-0"
+              className="absolute left-80 top-0 animate-pulse"
             />
             <img
               src={StarPu}
               alt="A shining star"
-              className="absolute -left-16 bottom-52"
+              className="absolute -left-16 bottom-52 animate-pulse"
             />
           </div>
           <div className="relative">
@@ -83,22 +91,22 @@ const Privacy = () => {
             <img
               src={Star}
               alt="A shining star"
-              className="absolute right-0 bottom-36"
+              className="absolute right-0 bottom-36 animate-pulse"
             />
             <img
               src={StarPuSmall}
               alt="A shining star"
-              className="absolute left-2 top-24 lg:right-[390px] lg:bottom-80"
+              className="absolute left-2 top-24 lg:right-[390px] lg:bottom-80 animate-pulse"
             />
             <img
               src={StarWhite}
               alt="A shining star"
-              className="absolute left-20 bottom-36 lg:right-[450px] lg:bottom-64"
+              className="absolute left-20 bottom-36 lg:right-[450px] lg:bottom-64 animate-pulse"
             />
             <img
               src={StarPu}
               alt="A shining star"
-              className="absolute -left-16 top-36"
+              className="absolute -left-16 top-36 animate-pulse"
             />
           </div>
         </div>

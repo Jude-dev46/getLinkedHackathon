@@ -9,10 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gasp": "^0.0.2",
+    "gsap": "^3.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.16.0",
+    "react-typewriter-effect": "^1.1.0",
+    "scrollmagic": "^2.0.8",
+    "typewriter-effect": "^2.21.0",
     "vercel": "^32.3.1"
   },
   "devDependencies": {

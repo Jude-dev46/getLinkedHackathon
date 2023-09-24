@@ -1,3 +1,7 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import ScrollMagic from "scrollmagic";
+
 import Star from "../assets/star.png";
 import StarPu from "../assets/star-pu.png";
 import StarWhiteBig from "../assets/starwhitebig.png";
@@ -6,19 +10,95 @@ import Feature3Img from "../assets/feature3.png";
 import { purpleRight } from "../assets";
 import { purpleLeft } from "../assets";
 
-
 const Feature3 = () => {
+  const triggerRef = useRef(null);
+  const parentRef = useRef(null);
+  const controller = new ScrollMagic.Controller();
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Adjust this threshold as needed
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Create a GSAP timeline for staggered animations
+          const animationTimeline = gsap.timeline();
+
+          // Get all elements with the class "animate-top"
+          const animateTopElements = document.querySelectorAll(".animate-top");
+
+          // Stagger the animations with a delay of 0.2 seconds between each element
+          animationTimeline.from(
+            animateTopElements,
+            {
+              opacity: 0,
+              y: 50,
+              duration: 1,
+              ease: "power2.out",
+            },
+            0.2 // Stagger delay
+          );
+
+          new ScrollMagic.Scene({
+            triggerElement: triggerRef.current,
+            triggerHook: 0.8,
+            reverse: false,
+          })
+            .setTween(animationTimeline) // Use the timeline for animation
+            .addTo(controller);
+
+          // Remove animation class when not in view
+          entry.target.classList.remove("animate");
+        }
+      });
+    }, options);
+
+    if (parentRef.current) {
+      observer.observe(parentRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <section className="bg-blue-900 pt-20 sm:pt-16 lg:pt-8 relative ">
+    <section
+      className="bg-blue-900 pt-20 sm:pt-16 lg:pt-8 relative "
+      ref={parentRef}
+    >
       {/* desktop mode */}
-      <img src={purpleRight} alt="purple lens flare" className="hidden lg:block absolute pointer-events-none top-[-550px] right-[-350px] mix-blend-hard-light  " />
-      <img src={purpleLeft} alt="purple lens flare" className="hidden lg:block absolute pointer-events-none bottom-[0px] left-[0px] mix-blend-hard-light " />
-      <img src={purpleRight} alt="purple lens flare" className="hidden lg:block absolute pointer-events-none bottom-[0px] right-[-250px] mix-blend-hard-light  " />
+      <img
+        src={purpleRight}
+        alt="purple lens flare"
+        className="hidden lg:block absolute pointer-events-none top-[-550px] right-[-350px] mix-blend-hard-light  "
+      />
+      <img
+        src={purpleLeft}
+        alt="purple lens flare"
+        className="hidden lg:block absolute pointer-events-none bottom-[0px] left-[0px] mix-blend-hard-light "
+      />
+      <img
+        src={purpleRight}
+        alt="purple lens flare"
+        className="hidden lg:block absolute pointer-events-none bottom-[0px] right-[-250px] mix-blend-hard-light  "
+      />
 
-
-       {/* mobile glow */}
-       <img src={purpleLeft} alt="purple lens flare" className=" lg:hidden absolute pointer-events-none top-[80px] left-[0px] mix-blend-hard-light " />
-      <img src={purpleRight} alt="purple lens flare" className=" lg:hidden absolute pointer-events-none bottom-[20px] right-[-220px] mix-blend-hard-light  " />
+      {/* mobile glow */}
+      <img
+        src={purpleLeft}
+        alt="purple lens flare"
+        className=" lg:hidden absolute pointer-events-none top-[80px] left-[0px] mix-blend-hard-light "
+      />
+      <img
+        src={purpleRight}
+        alt="purple lens flare"
+        className=" lg:hidden absolute pointer-events-none bottom-[20px] right-[-220px] mix-blend-hard-light  "
+      />
 
       <div className="bg-blue-900 px-12 mx-auto max-w-7xl sm:px-6 lg:px-8 mb-20">
         <div className="relative grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
@@ -30,7 +110,7 @@ const Feature3 = () => {
               Judging Criteria
               <br /> <span className="text-blue-600 mt-4">Key attriutes</span>
             </h2>
-            <p className="text-white font-sans mb-5">
+            <p className="text-white font-sans mb-5 animate-top">
               <span className="text-pink text-lg font-sans">
                 Innovaton and Creativity:
               </span>{" "}
@@ -38,7 +118,7 @@ const Feature3 = () => {
               whether it addresses a real-world problem in a novel way or
               introduces innovative features.
             </p>
-            <p className="text-white font-sans mb-5">
+            <p className="text-white font-sans mb-5 animate-top">
               <span className="text-pink text-lg font-sans">
                 Functionality:
               </span>{" "}
@@ -46,7 +126,7 @@ const Feature3 = () => {
               functions effectively and without major issues? Judges would
               consider the completeness and robustness of the solution.
             </p>
-            <p className="text-white font-sans mb-5">
+            <p className="text-white font-sans mb-5 animate-top">
               <span className="text-pink text-lg font-sans">
                 Impact and Relevance:
               </span>{" "}
@@ -55,7 +135,7 @@ const Feature3 = () => {
               target audience? Judges would assess the potential social,
               economic, or environmental benefits.
             </p>
-            <p className="text-white font-sans mb-5">
+            <p className="text-white font-sans mb-5 animate-top">
               <span className="text-pink text-lg font-sans">
                 Technical Complexity
               </span>{" "}
@@ -63,7 +143,7 @@ const Feature3 = () => {
               consider the complexity of the code, the use of advanced
               technologies or algorithms, and the scalability of the solution.
             </p>
-            <p className="h-44 text-white font-sans">
+            <p className="h-44 text-white font-sans animate-top">
               <span className="text-pink text-lg font-sans">
                 Adherence to Hackathon Rules:
               </span>{" "}

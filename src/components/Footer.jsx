@@ -27,7 +27,7 @@ const Footer = () => {
             <img
               src={Star}
               alt="A shining star"
-              className="absolute left-0 top-36"
+              className="absolute left-0 top-36 animate-pulse"
             />
           </div>
           <div className="relative flex flex-col justify-center lg:ml-40">
@@ -99,7 +99,7 @@ const Footer = () => {
             <img
               src={StarWhite}
               alt="A shining star"
-              className="absolute right-10 top-8"
+              className="absolute right-10 top-8 animate-pulse"
             />
           </div>
         </div>
