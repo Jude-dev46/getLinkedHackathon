@@ -1,12 +1,11 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 
 import Star from "../../assets/star.png";
 import Input from "../utils/Input";
 import RegisterFormHeader from "./RegisterFormHeader";
 import Button from "../utils/Button";
 
-const RegisterForm = ({ onRegister, category }) => {
-  const [isLoading, setIsLoading] = useState(false);
+const RegisterForm = ({ isLoading, onRegister, category }) => {
   const teamInputRef = useRef();
   const phoneInputRef = useRef();
   const emailInputRef = useRef();
@@ -28,13 +27,13 @@ const RegisterForm = ({ onRegister, category }) => {
     ) {
       alert("Invalid inputs");
     }
-    setIsLoading(true);
+
     onRegister(inputs);
+    teamInputRef.current.value = "";
+    phoneInputRef.current.value = "";
+    emailInputRef.current.value = "";
+    projectInputRef.current.value = "";
   }
-  teamInputRef.current.value = "";
-  phoneInputRef.current.value = "";
-  emailInputRef.current.value = "";
-  projectInputRef.current.value = "";
 
   return (
     <div className="lg:bg-dark relative px-5 lg:h-[85vh] lg:flex lg:flex-col lg:justify-center lg:px-20 py-10 rounded-lg mx-5 lg:mr-10 -lg:mt-10">

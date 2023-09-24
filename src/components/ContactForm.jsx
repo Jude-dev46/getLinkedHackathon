@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 
 import Star from "../assets/star.png";
 import StarPu from "../assets/star-pu.png";
@@ -7,8 +7,7 @@ import Input from "../components/utils/Input";
 import Button from "../components/utils/Button";
 import ContactFormHeader from "./ContactHeader";
 
-const ContactForm = ({ onContact }) => {
-  const [isLoading, setIsLoading] = useState(false);
+const ContactForm = ({ isLoading, onContact }) => {
   const nameInputRef = useRef();
   const emailInputRef = useRef();
   const messageInputRef = useRef();
@@ -22,8 +21,6 @@ const ContactForm = ({ onContact }) => {
       phone: phoneInputRef.current.value,
     };
 
-    console.log(inputs);
-
     if (
       inputs.name === "" ||
       inputs.email === "" ||
@@ -33,14 +30,14 @@ const ContactForm = ({ onContact }) => {
       alert("Invalid inputs!");
     } else {
       onContact(inputs);
-      nameInputRef.current.value = "";
-      emailInputRef.current.value = "";
-      messageInputRef.current.value = "";
     }
+    nameInputRef.current.value = "";
+    emailInputRef.current.value = "";
+    messageInputRef.current.value = "";
   }
 
   return (
-    <div className="lg:bg-dark relative lg:h-[85vh] lg:flex lg:flex-col lg:justify-center lg:px-20 lg:py-10 rounded-lg lg:mr-10 lg:mt-0">
+    <div className="lg:bg-dark relative lg:h-[80vh] lg:flex lg:flex-col lg:justify-center lg:px-20 lg:py-10 rounded-lg lg:mr-10 lg:mt-0">
       <img
         src={StarPu}
         alt="A shining star"
@@ -84,22 +81,13 @@ const ContactForm = ({ onContact }) => {
           />
         </div>
         <div className="flex flex-col gap-4 lg:flex-row lg:gap-8 mb-4">
-          {/* <Input
-            type="text"
-            placeholder="Send a message"
-            value={messageInputRef}
-            style={true}
-            message={true}
-          /> */}
-          
-                        <textarea
-                            className="w-full bg-dark text-white border-[1px] border-white placeholder-white outline-primary shadow-md rounded-md px-3 lg:px-5 py-2 h-[119px] custom-scroll-bar resize-none"
-                            rows={5}
-                            placeholder="Message"
-                            name="message"
-                            // value={nameInputRef?.cu}
-                            ref={messageInputRef}
-                        />
+          <textarea
+            className="w-full lg:w-96 bg-dark text-white border-[1px] border-white placeholder-white outline-primary shadow-md rounded-md px-3 lg:px-5 py-2 h-[119px] custom-scroll-bar resize-none"
+            rows={5}
+            placeholder="Message"
+            name="message"
+            ref={messageInputRef}
+          />
         </div>
       </div>
       <div className="flex justify-center lg:self-center mt-2">
@@ -107,7 +95,9 @@ const ContactForm = ({ onContact }) => {
           Submit
         </Button>
       </div>
-      {isLoading && <p className="text-white text-sm mt-2">Submitting...</p>}
+      {isLoading && (
+        <p className="text-white text-sm mt-2 text-center">Submitting...</p>
+      )}
       <img
         src={StarWhiteBig}
         alt="A shining star"

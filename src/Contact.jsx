@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { Navbar } from "./components";
@@ -6,7 +7,10 @@ import ContactItem from "./components/ContactItem";
 import SocialLink from "./components/SocialLink";
 
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   async function sendContactMessage(inputs) {
+    setIsLoading(true);
     const params = {
       email: inputs.email,
       phone_number: inputs.phone,
@@ -25,7 +29,13 @@ const Contact = () => {
       }
     );
 
+    if (!response.ok) {
+      setIsLoading(false);
+      alert("An error occurred!");
+    }
+
     if (response.ok) {
+      setIsLoading(false);
       alert("Message successfully submitted!");
     }
   }
@@ -75,7 +85,7 @@ const Contact = () => {
           <div className="hidden lg:block">
             <ContactItem />
           </div>
-          <ContactForm onContact={sendContactMessage} />
+          <ContactForm onContact={sendContactMessage} isLoading={isLoading} />
         </div>
         <div className="lg:hidden w-full flex flex-col gap-1 items-center justify-center pb-8">
           <p className="text-blue-600 text-base font-semibold mb-2">Share on</p>

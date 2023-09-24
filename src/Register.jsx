@@ -9,6 +9,7 @@ import Modal from "./components/Modal";
 
 const Register = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [category, setCategory] = useState();
 
   useEffect(() => {
@@ -23,6 +24,7 @@ const Register = () => {
   }, []);
 
   async function registrationHandler(inputs) {
+    setIsLoading(true);
     const enteredData = {
       team: inputs.team,
       phone: inputs.phone,
@@ -54,9 +56,15 @@ const Register = () => {
 
     if (res.status === 400) {
       alert(`${data.email[0]}`);
-      return;
+      setIsLoading(false);
     }
 
+    if (res.status === 500) {
+      alert("Connect to your internet!");
+      setIsLoading(false);
+    }
+
+    setIsLoading(false);
     setIsOpen(true);
     document.body.style.overflow = "hidden";
   }
@@ -87,7 +95,11 @@ const Register = () => {
         />
 
         <RegisterImage />
-        <RegisterForm onRegister={registrationHandler} category={category} />
+        <RegisterForm
+          onRegister={registrationHandler}
+          category={category}
+          isLoading={isLoading}
+        />
       </div>
     </div>
   );
