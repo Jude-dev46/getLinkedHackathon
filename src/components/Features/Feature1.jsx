@@ -1,11 +1,10 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollMagic from "scrollmagic";
-// import "scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap";
 
-import Arrow from "../assets/arrow.png";
-import Idea from "../assets/idea.png";
-import StarPu from "../assets/star-pu.png";
+import Arrow from "../../assets/arrow.png";
+import Idea from "../../assets/idea.png";
+import StarPu from "../../assets/star-pu.png";
 
 const Feature1 = () => {
   const triggerRef = useRef(null);

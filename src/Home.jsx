@@ -2,9 +2,9 @@ import React from "react";
 
 import { Navbar } from "./components";
 import { Hero } from "./components";
-import Feature1 from "./components/Feature1";
-import Feature2 from "./components/Feature2";
-import Feature3 from "./components/Feature3";
+import Feature1 from "./components/Features/Feature1";
+import Feature2 from "./components/Features/Feature2";
+import Feature3 from "./components/Features/Feature3";
 import FAQ from "./components/FAQ";
 import Prizes from "./components/Prizes";
 import Sponsors from "./components/Partners";

@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { Navbar } from "./components";
-import ContactForm from "./components/ContactForm";
-import ContactItem from "./components/ContactItem";
+import ContactForm from "./components/contact/ContactForm";
+import ContactItem from "./components/contact/ContactItem";
 import SocialLink from "./components/SocialLink";
 
 const Contact = () => {

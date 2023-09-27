@@ -2,12 +2,12 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollMagic from "scrollmagic";
 
-import { purpleLeft } from "../assets";
-import StarPu from "../assets/star-pu.png";
-import StarWhiteBig from "../assets/starwhitebig.png";
-import StarWhiteSmall from "../assets/star1.png";
-import Feature2Img from "../assets/feature2.png";
-import { purpleRight } from "../assets";
+import { purpleLeft } from "../../assets";
+import StarPu from "../../assets/star-pu.png";
+import StarWhiteBig from "../../assets/starwhitebig.png";
+import StarWhiteSmall from "../../assets/star1.png";
+import Feature2Img from "../../assets/feature2.png";
+import { purpleRight } from "../../assets";
 
 const Feature2 = () => {
   const triggerRef = useRef(null);

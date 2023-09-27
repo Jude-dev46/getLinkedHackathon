@@ -13,8 +13,24 @@ import StarWhiteBig from "../assets/starwhitebig.png";
 import StarSmall from "../assets/sstar.png";
 import Star2 from "../assets/star2.png";
 import StarWhite from "../assets/star-white.png";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const Hero = () => {
+  const [currHrs, setCurrHrs] = useState("00");
+  const [currMin, setCurrMin] = useState("00");
+  const [currSec, setCurrSec] = useState("00");
+
+  useEffect(() => {
+    const hrs = new Date().getHours();
+    const mins = new Date().getMinutes();
+    const secs = new Date().getSeconds();
+
+    setCurrHrs(hrs);
+    setCurrMin(mins);
+    setCurrSec(secs);
+  }, []);
+
   return (
     <div className=" relative bottom-10 bg-blue-900 -mb-12 ">
       <div>
@@ -112,13 +128,16 @@ const Hero = () => {
               </Link>
               <div className="space-x-4 text-5xl  font-unicaone">
                 <span>
-                  00<span className="text-sm">H</span>
+                  {currHrs < 10 ? `0${currHrs}` : currHrs}
+                  <span className="text-sm">H</span>
                 </span>
                 <span>
-                  00<span className="text-sm">M</span>
+                  {currMin < 10 ? `0${currMin}` : currMin}
+                  <span className="text-sm">M</span>
                 </span>
                 <span>
-                  00<span className="text-sm">S</span>
+                  {currSec < 10 ? `0${currSec}` : currSec}
+                  <span className="text-sm">S</span>
                 </span>
               </div>
             </div>

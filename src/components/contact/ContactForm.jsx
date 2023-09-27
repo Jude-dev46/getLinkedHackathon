@@ -1,10 +1,10 @@
 import { useRef } from "react";
 
-import Star from "../assets/star.png";
-import StarPu from "../assets/star-pu.png";
-import StarWhiteBig from "../assets/starwhitebig.png";
-import Input from "../components/utils/Input";
-import Button from "../components/utils/Button";
+import Star from "../../assets/star.png";
+import StarPu from "../../assets/star-pu.png";
+import StarWhiteBig from "../../assets/starwhitebig.png";
+import Input from "../utils/Input";
+import Button from "../utils/Button";
 import ContactFormHeader from "./ContactHeader";
 
 const ContactForm = ({ isLoading, onContact }) => {

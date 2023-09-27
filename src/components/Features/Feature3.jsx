@@ -2,13 +2,13 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollMagic from "scrollmagic";
 
-import Star from "../assets/star.png";
-import StarPu from "../assets/star-pu.png";
-import StarWhiteBig from "../assets/starwhitebig.png";
-import Ellipse from "../assets/ellipse.png";
-import Feature3Img from "../assets/feature3.png";
-import { purpleRight } from "../assets";
-import { purpleLeft } from "../assets";
+import Star from "../../assets/star.png";
+import StarPu from "../../assets/star-pu.png";
+import StarWhiteBig from "../../assets/starwhitebig.png";
+import Ellipse from "../../assets/ellipse.png";
+import Feature3Img from "../../assets/feature3.png";
+import { purpleRight } from "../../assets";
+import { purpleLeft } from "../../assets";
 
 const Feature3 = () => {
   const triggerRef = useRef(null);
