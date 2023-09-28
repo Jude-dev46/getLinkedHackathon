@@ -22,13 +22,15 @@ const Hero = () => {
   const [currSec, setCurrSec] = useState("00");
 
   useEffect(() => {
-    const hrs = new Date().getHours();
-    const mins = new Date().getMinutes();
-    const secs = new Date().getSeconds();
+    setInterval(() => {
+      const hrs = new Date().getHours();
+      const mins = new Date().getMinutes();
+      const secs = new Date().getSeconds();
 
-    setCurrHrs(hrs);
-    setCurrMin(mins);
-    setCurrSec(secs);
+      setCurrHrs(hrs);
+      setCurrMin(mins);
+      setCurrSec(secs);
+    }, 1000);
   }, []);
 
   return (
